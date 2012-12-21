@@ -25,7 +25,7 @@
 //#include <ITDB02_Graph16.h> // Comente esta linha caso o seu LCD não seja o ITDB32WC
 //#include <ITDB02_Touch.h> // Comente esta linha caso o seu LCD não seja o ITDB32WC
 
-#include <UTFT.h>    // Descomente esta linha caso o seu LCD seja o ITDB32WD
+#include <UTFT.h>    // Descomente esta linha caso o seu LCD seja o ITDB32WD 
 #include <UTouch.h> // Descomente esta linha caso o seu LCD seja o ITDB32WD
 
 #include <Wire.h>
