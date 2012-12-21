@@ -83,8 +83,8 @@ void mainScreen(boolean refreshAll=false)
   if ( refreshAll)                                  //draw static elements
   {
     setFont(SMALL, 255, 255, 255, 0, 0, 0);
-    myGLCD.print("HEATSINK TEMP:", 12, 86);   
-    myGLCD.print("WATER TEMP:", 12, 67);
+    myGLCD.print("HEATSINK:", 12, 86);   
+    myGLCD.print("WATER TEMP.:", 12, 67);
     myGLCD.print("TANK PH:", 12, 105);
     myGLCD.print("REACTOR PH:", 12, 124);
     myGLCD.print("SALINITY:", 12, 143);
@@ -94,9 +94,9 @@ void mainScreen(boolean refreshAll=false)
     myGLCD.print("HEATER:", 212, 86);
     myGLCD.print("REACTOR:", 212, 105);
     myGLCD.print("OZON:", 212, 124);
-    myGLCD.print("REPOSICAO:", 212, 143);
-    myGLCD.print("WATER LEVEL:", 212, 162);
-    myGLCD.print("TPA:", 212, 181);
+    myGLCD.print("AWCS :", 212, 143);
+    myGLCD.print("LEVEL:", 212, 162);
+    myGLCD.print("TOP OFF:", 212, 181);
 
     setFont (LARGE, 0, 255, 0, 0, 0, 0);
     myGLCD.drawCircle(179, 84, 2);
@@ -237,7 +237,6 @@ void mainScreen(boolean refreshAll=false)
   if (falha_tpa == true)
   {             
     setFont(LARGE, 255, 0, 0, 0, 0, 0);
-    myGLCD.print("FAI!", 250, 180);           // Sinaliza falha durante uma TPA
+    myGLCD.print("FAIL!", 250, 180);           // Sinaliza falha durante uma TPA
   }  
 }
-
