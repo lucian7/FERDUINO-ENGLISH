@@ -13,7 +13,7 @@ void tempgScreen()//------------------------------------------------------------
   float linhaG;
   float linhaB;
 
-  printHeader("GRAFICO DE TEMPERATURA");
+  printHeader("TEMERATURE GRAPH");
   setFont(SMALL, 255, 255, 255, 0, 0, 0);
   myGLCD.print("22,5", 5, 180);
   myGLCD.print("23,0", 5, 165);
@@ -96,9 +96,9 @@ void tempgScreen()//------------------------------------------------------------
   myGLCD.drawLine(40, y, 290, y); // Variação mais
   myGLCD.drawLine(40, z, 290, z); // Variação menos
 
-  printButton("INICIO", iniC[0], iniC[1], iniC[2], iniC[3]); 
+  printButton("HOME", iniC[0], iniC[1], iniC[2], iniC[3]); 
   printButton("MENU", menU[0], menU[1], menU[2], menU[3]);
-  printButton("VOLTAR", volT[0], volT[1], volT[2], volT[3]);
+  printButton("BACK", volT[0], volT[1], volT[2], volT[3]);
 
   digitalWrite (4, LOW);
   file.open(&root, "LOGTDIA.TXT", O_READ);
@@ -247,9 +247,9 @@ void orpScreen()//------------------------------------------------------------te
   myGLCD.drawLine(40, y, 290, y); //variacao mais
   myGLCD.drawLine(40, z, 290, z); //variacao menos
 
-  printButton("INICIO", iniC[0], iniC[1], iniC[2], iniC[3]); 
+  printButton("HOME", iniC[0], iniC[1], iniC[2], iniC[3]); 
   printButton("MENU", menU[0], menU[1], menU[2], menU[3]);
-  printButton("VOLTAR", volT[0], volT[1], volT[2], volT[3]);
+  printButton("BACK", volT[0], volT[1], volT[2], volT[3]);
 
   digitalWrite (4, LOW);
   file.open(&root, "LOGODIA.TXT", O_READ);
@@ -398,9 +398,9 @@ void PHAScreen()//-------------------------------ph do aqua---------------------
   myGLCD.drawLine(40, y, 290, y); //variacao mais
   myGLCD.drawLine(40, z, 290, z); //variacao menos
 
-  printButton("INICIO", iniC[0], iniC[1], iniC[2], iniC[3],false); 
+  printButton("HOME", iniC[0], iniC[1], iniC[2], iniC[3],false); 
   printButton("MENU", menU[0], menU[1], menU[2], menU[3], false);
-  printButton("VOLTAR", volT[0], volT[1], volT[2], volT[3],false);
+  printButton("BACK", volT[0], volT[1], volT[2], volT[3],false);
 
   digitalWrite (4, LOW);
   file.open(&root, "LOGPDIA.TXT", O_READ);
@@ -467,7 +467,7 @@ void PHRScreen()//----------------PH do reator ---------------------------------
   char buf[7];
   float pht;
 
-  printHeader("GRAFICO DE PH DO REATOR DE CALCIO");
+  printHeader("CA REACTOR GRAPH");
   setFont(SMALL, 255, 255, 255, 0, 0, 0);
   myGLCD.print("5,4", 10, 180);
   myGLCD.print("5,6", 10, 165);
@@ -549,9 +549,9 @@ void PHRScreen()//----------------PH do reator ---------------------------------
   myGLCD.drawLine(40, y, 290, y); //variacao mais
   myGLCD.drawLine(40, z, 290, z); //variacao menos
 
-  printButton("INICIO", iniC[0], iniC[1], iniC[2], iniC[3],false); 
+  printButton("HOME", iniC[0], iniC[1], iniC[2], iniC[3],false); 
   printButton("MENU", menU[0], menU[1], menU[2], menU[3], false);
-  printButton("VOLTAR", volT[0], volT[1], volT[2], volT[3],false);
+  printButton("BACK", volT[0], volT[1], volT[2], volT[3],false);
 
   digitalWrite (4, LOW);
   file.open(&root, "LOGRDIA.TXT", O_READ);
@@ -618,7 +618,7 @@ void densidadeScreen()//----------------grafico de densidade -------------------
   int densidade;
 
 
-  printHeader("GRAFICO DE DENSIDADE");
+  printHeader("SALINITY GRAPH");
   setFont(SMALL, 255, 255, 255, 0, 0, 0);
   myGLCD.print("1010", 10, 180);
   myGLCD.print("1012", 10, 165);
@@ -701,9 +701,9 @@ void densidadeScreen()//----------------grafico de densidade -------------------
   myGLCD.drawLine(40+w, y, 290+w, y); //variacao mais
   myGLCD.drawLine(40+w, z, 290+w, z); //variacao menos
 
-  printButton("INICIO", iniC[0], iniC[1], iniC[2], iniC[3],false); 
+  printButton("HOME", iniC[0], iniC[1], iniC[2], iniC[3],false); 
   printButton("MENU", menU[0], menU[1], menU[2], menU[3], false);
-  printButton("VOLTAR", volT[0], volT[1], volT[2], volT[3],false);
+  printButton("BACK", volT[0], volT[1], volT[2], volT[3],false);
 
   digitalWrite (4, LOW);
   file.open(&root, "LOGDDIA.TXT", O_READ);
