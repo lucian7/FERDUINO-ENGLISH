@@ -34,7 +34,7 @@ void mainScreen(boolean refreshAll=false)
       myGLCD.printNumF(lunarCycle*100, 1, 240, 210);
     }
     myGLCD.print("% ILLUMINATED", 280, 210);
-    myGLCD.print("LUNAR FASE:", 10, 210);
+    myGLCD.print("LUNAR PHASE:", 10, 210);
   }
   if ((blueLed != bled_out) || refreshAll)       //refresh blue led displays
   {
