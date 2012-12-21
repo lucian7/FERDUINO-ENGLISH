@@ -33,8 +33,8 @@ void mainScreen(boolean refreshAll=false)
     else { 
       myGLCD.printNumF(lunarCycle*100, 1, 240, 210);
     }
-    myGLCD.print("% ILUMINADA", 280, 210);
-    myGLCD.print("FASE LUNAR:", 10, 210);
+    myGLCD.print("% ILLUMINATED", 280, 210);
+    myGLCD.print("LUNAR FASE:", 10, 210);
   }
   if ((blueLed != bled_out) || refreshAll)       //refresh blue led displays
   {
@@ -83,19 +83,19 @@ void mainScreen(boolean refreshAll=false)
   if ( refreshAll)                                  //draw static elements
   {
     setFont(SMALL, 255, 255, 255, 0, 0, 0);
-    myGLCD.print("T.DISSIPADOR:", 12, 86);   
-    myGLCD.print("TEMP. AGUA:", 12, 67);
-    myGLCD.print("PH DO AQUARIO:", 12, 105);
-    myGLCD.print("PH DO REATOR:", 12, 124);
-    myGLCD.print("DENSIDADE:", 12, 143);
+    myGLCD.print("HEATSINK TEMP:", 12, 86);   
+    myGLCD.print("WATER TEMP:", 12, 67);
+    myGLCD.print("TANK PH:", 12, 105);
+    myGLCD.print("REACTOR PH:", 12, 124);
+    myGLCD.print("SALINITY:", 12, 143);
     myGLCD.print("ORP:", 12, 162);
 
     myGLCD.print("CHILLER:", 212, 67);
-    myGLCD.print("AQUECEDOR:", 212, 86);
-    myGLCD.print("REATOR:", 212, 105);
-    myGLCD.print("OZONIO:", 212, 124);
+    myGLCD.print("HEATER:", 212, 86);
+    myGLCD.print("REACTOR:", 212, 105);
+    myGLCD.print("OZON:", 212, 124);
     myGLCD.print("REPOSICAO:", 212, 143);
-    myGLCD.print("NIVEL:", 212, 162);
+    myGLCD.print("WATER LEVEL:", 212, 162);
     myGLCD.print("TPA:", 212, 181);
 
     setFont (LARGE, 0, 255, 0, 0, 0, 0);
@@ -237,7 +237,7 @@ void mainScreen(boolean refreshAll=false)
   if (falha_tpa == true)
   {             
     setFont(LARGE, 255, 0, 0, 0, 0, 0);
-    myGLCD.print("FALHA!", 250, 180);           // Sinaliza falha durante uma TPA
+    myGLCD.print("FAI!", 250, 180);           // Sinaliza falha durante uma TPA
   }  
 }
 

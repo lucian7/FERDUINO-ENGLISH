@@ -22,11 +22,11 @@
 //*************************************************************************************************
 //*************** Biliotecas utilizadas ***********************************************************
 //*************************************************************************************************
-#include <ITDB02_Graph16.h> // Comente esta linha caso o seu LCD não seja o ITDB32WC
-#include <ITDB02_Touch.h> // Comente esta linha caso o seu LCD não seja o ITDB32WC
+//#include <ITDB02_Graph16.h> // Comente esta linha caso o seu LCD não seja o ITDB32WC
+//#include <ITDB02_Touch.h> // Comente esta linha caso o seu LCD não seja o ITDB32WC
 
-//#include <UTFT.h>    // Descomente esta linha caso o seu LCD seja o ITDB32WD
-//#include <UTouch.h> // Descomente esta linha caso o seu LCD seja o ITDB32WD
+#include <UTFT.h>    // Descomente esta linha caso o seu LCD seja o ITDB32WD
+#include <UTouch.h> // Descomente esta linha caso o seu LCD seja o ITDB32WD
 
 #include <Wire.h>
 #include <EEPROM.h>
@@ -103,11 +103,11 @@ boolean cd=false;
 //*******************************************************************************************************
 //********************** Variáveis das fuções do touch screen e tela inicial ****************************
 //*******************************************************************************************************
-ITDB02        myGLCD(38,39,40,41,1); // Comente esta linha caso o seu LCD não seja o ITDB32WC
-ITDB02_Touch  myTouch(6,5,4,3,2); // Comente esta linha caso o seu LCD não seja o ITDB32WC
+//ITDB02        myGLCD(38,39,40,41,1); // Comente esta linha caso o seu LCD não seja o ITDB32WC
+//ITDB02_Touch  myTouch(6,5,4,3,2); // Comente esta linha caso o seu LCD não seja o ITDB32WC
 
-//UTFT        myGLCD(ITDB32WD, 38,39,40,41);   //Descomente esta linha caso o seu LCD seja o ITDB32WD
-//UTouch      myTouch(6,5,4,3,2); // Descomente esta linha caso o seu LCD seja o ITDB32WD
+UTFT        myGLCD(ITDB32WD, 38,39,40,41);   //Descomente esta linha caso o seu LCD seja o ITDB32WD
+UTouch      myTouch(6,5,4,3,2); // Descomente esta linha caso o seu LCD seja o ITDB32WD
 
 int x, y;                  // Coordenadas do touch screen
 long previousMillis = 0;
@@ -337,7 +337,7 @@ int tpa_status;
 //*****************************************************************************************
 //************************* Funções do ethernet shield ************************************
 //*****************************************************************************************
-boolean Ethernet_Shield = true; // Altere para "false" caso não tenha um Ethernet Shield conectado ao Arduino.
+boolean Ethernet_Shield = false; // Altere para "false" caso não tenha um Ethernet Shield conectado ao Arduino.
 
 #define FEED    "xxxxx"               // Número do projeto(cosm.com).
  #define APIKEY  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" //Senha do projeto(cosm.com)
